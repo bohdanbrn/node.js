@@ -1,11 +1,3 @@
-console.log(__dirname);
-console.log(__filename);
+var counter = require('./array');
 
-setTimeout(function() {
-    console.log("Hello!");
-}, 2000);
-
-for ( var i = 0; i < 5; i++ ) {
-    console.log(i);
-}
-
+console.log(counter([1,5,34,12,9,0]) );
