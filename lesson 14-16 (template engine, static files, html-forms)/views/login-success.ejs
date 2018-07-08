@@ -1,0 +1,18 @@
+<% include blocks/header.ejs %>
+
+<div class="block">
+    <h1>Login success page:</h1>
+    <ul class="user-data">
+        <li>
+            <b>Email:</b> <%= data.email %>
+        </li>
+        <li>
+            <b>Password:</b> <%= data.password %>
+        </li>
+        <li>
+            <b>Is Check:</b> <%= data.check %>
+        </li>
+    </ul>
+</div>
+
+<% include blocks/footer.ejs %>
