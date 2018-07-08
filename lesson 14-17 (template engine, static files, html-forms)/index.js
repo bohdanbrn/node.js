@@ -25,10 +25,13 @@ app.post('/login', urlencodedParser, function(req, res) {
 });
 
 app.get('/news/:id', function(req, res) {
-    var news_data = {
-        newsId: req.params.id
+    var page_data = {
+        newsId: req.params.id,
+        filter: req.query.filter,
+        city: req.query.city
     };
-    res.render('news', {page_data: news_data});
+    console.log(req.query);
+    res.render('news', {page_data: page_data});
 });
 
 app.listen(3000);
