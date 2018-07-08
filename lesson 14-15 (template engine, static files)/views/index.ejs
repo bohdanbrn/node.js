@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Simple HTML document</title>
+        <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
+        <% include blocks/header.ejs %>
+        
         <div class="block">
-            <h1>News id: <%= news_data.newsId %></h1>
+            <h1 class="title">Hello World!</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
